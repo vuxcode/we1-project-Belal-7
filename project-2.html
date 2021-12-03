@@ -26,7 +26,7 @@
 		}
 
 	#h {
-		float: center;
+		text-align: center;
 	}
 
 	#pic2
@@ -55,10 +55,17 @@
 		clear: right;
 	}
 	#t3 {
-		  float: left;
+		  text-align: left;
 		  width: 45%;
 
 		}
+
+	#titel3
+	{
+		text-align: left;
+
+	}
+
 
 	#pic5
 	{
@@ -143,7 +150,7 @@
 	#pic15
 	{
 		float: left;
-		width: 30%;
+		width: 35%;
 		margin: 1em;
 	}
 	#pic16
@@ -158,16 +165,70 @@
 		width: 50%;
 		margin: 1em;
 	}
+	.left{
+		text-align: left;
+	}
+	.article
+	{
+		margin: auto;
+		width: 48%;
+	}
+	.menu
+	{
+		display: none;
+	}
+	.mystyle {
+  display: none;
+}
+.button
+{
+	position: absolute;
+	top: 0;
+}
+
 </style>
 
 </head>
 <body>
-	<h1 id="h">The story of Cristiano Ronaldo</h1>
+<h1 id="h">The story of Cristiano Ronaldo</h1>
+
+<button onclick="myFunction()" class="button">
+<svg viewBox="0 0 100 80" width="40" height="40">
+ 	 <rect width="100" height="10"></rect>
+  	<rect y="30" width="100" height="10"></rect>
+ 	 <rect y="60" width="100" height="10"></rect>
+</svg>
+</button>
+<ul id="menu" class="mystyle">
+	<li><a href="#2002-at-Sporting-FC">2002 at Sporting FC</a></li>
+	<li><a href="#2003-2009-at-Manchester-United">2003-2009 at Manchester United</a></li>
+	<li><a href="#2006-2007">2006-2007</a></li>
+	<li><a href="#2007-2008">2007-2008</a></li>
+	<li><a href="#2008-2009:-Final-season-at-United">2008-2009: Final season at United</a></li>
+	<li><a href="#2009-2018-at-Real-Madrid">2009-2018 at Real Madrid</a></li>
+	<li><a href="#2009-2013">2009-2013</a></li>
+	<li><a href="#2013-2015:-Consecutive-FIFA-Ballon-d'Or-wins-and-LaDécima">2013-2015: Consecutive FIFA Ballon d'Or wins and LaDécima</a></li>
+	<li><a href="#2015-2017:-All-time-Real-Madrid-top-scorer">2015-2017: All-time Real Madrid top scorer</a></li>
+	<li><a href="#2017–2018:-Fifth-Ballon-d'Or-and-fifth-Champions-League-title">2017–2018: Fifth Ballon d'Or and fifth Champions League title</a></li>
+	<li><a href="#Juventus-2018-2021">Juventus 2018-2021</a></li>
+	<li><a href="#2020–2021:-100-Juventus-goals-Capocannoniere-and-departure">2020–2021: 100 Juventus goals, Capocannoniere and departure</a></li>
+	<li><a href="#Return-to-Manchester-United-2021-">Return to Manchester United 2021-</a></li>
+	<li><a href="#Every-trophe-Cristiano-Ronaldo-won-from-2002-to-2021">Every trophe Cristiano Ronaldo won from 2002 to 2021</a></li>
+</ul>
+<script >
+	function myFunction(){
+		var element = document.getElementById("menu");
+		element.classList.toggle("mystyle");
+	}
+</script>
+
+
 <div>
-<h2>
+<h2 id="2002-at-Sporting-FC">
 	2002 at Sporting FC
-</h2>	
-<p id="t1">
+</h2>
+
+	<p id="t1">
 The year that changes CR7 life. As a 17 years old CR7 made his first ever professional match in Champions league with Sporting FC against Inter Milan in the second half as a sub on 14 August 2002.In his first ever match in the Portuguese Primeria Liga with sporting FC, Ronaldo scored two goals to help his team win against Moreirense. 
 </p>
 
@@ -175,7 +236,7 @@ The year that changes CR7 life. As a 17 years old CR7 made his first ever profes
 </div>
 
 <div>
-<h2>2003-2009 at Manchester United<br><br> 
+<h2 id="2003-2009-at-Manchester-United">2003-2009 at Manchester United<br><br> 
 2003-2006
 </h2>
 <p id="t2">After good years in Sporting FC, and with an amazing start in the Primeria Liga with Sporting FC, Cristiano start to bring attention in himself from big clubs such as Manchester United in primer league. 
@@ -187,24 +248,26 @@ Ronaldo making history at united by scoring theirs 1000th premier league goal, i
 The second trophy Ronaldo won with Manchester United was the Football league cup, in their 4-0 final win over Wigan Athletic, leaving his mark with the third goal.</p>
 <img id="pic2" src="MAIN-Cristiano-Ronaldo-Sporting-Lisbon-Signing-for-United.jpg" alt="Ronaldo holding a shirt of Manchester United after moving to them from sporting FC ">
 </div>
-<h2>2006-2007</h2>
+<div class="left">
+<h2 id="2006-2007">2006-2007</h2>
 <p id="t3">
 After scoring over 20-goals for the first time, Cristiano Ronaldo won his first Premier league title. At the end of the December, Ronaldo scored three consecutive, after that he was named the Premier League Player of the Month in November and December. Becoming only the third player to receive consecutive honors.
 </p>
-<div>
-<h2>2007-2008</h2>
+</div>
+
+<h2 id="2007-2008">2007-2008</h2>
 <img class="right" id="pic3" src="https://i.pinimg.com/564x/48/5b/7b/485b7b74d6608859f11bcf152fae7c7f.jpg" alt="Ronaldo holding a golden boot that he won">
 <img class="right" id="pic4" src="CR7-witchcapten.jpg">
-<center>
+<article class="article">
+<p>
 In 2006-2007 UEFA Champions League, Ronaldo scored his first and second goal in the 7-1 win over Roma in the quarter-final stage, and after 30 games played in the competition. After a 7-1 win vs Roma, United did go throw to face Milan in the semi-final, there Ronaldo scored a goal in their 3-2 win in the first leg. But in the second leg Manchester United loses 3-0 and gets out of the competition against Milan. Ronaldo scored the only goal in game to give United a win in the derby against Manchester City, this goal makes Ronaldo riche his 50th goal for the club on May the 5th. In the end on the season United win their first league title in four years.  As a result of his performances, he amassed a host of personal awards for the season. He won the Professional Footballers' Association's Player's Player, Fans' Player and Young Player of the Year awards, as well as the Football Writers' Association's Footballer of the Year award, becoming the first player to win all four main PFA and FWA honours. His wages were concurrently upgraded to £120,000 a week as part of a five-year contract extension. Ronaldo was named runner-up to Kaká for the 2007 Ballon d'Or, and came third, behind Kaká and Lionel Messi, in the running for the 2007 FIFA World Player of the Year award.
 On 12 January 2008, Ronaldo scored his first and only hat-trick for United in a 6-0 win against Newcastle United, which therefore put them in the top of the league table. On 19 March, Ronaldo captained United for the first time in a home win over Bolton and scored both goals in a 2-0 win. After two goals against Bolton, Ronaldo set an new club’s new single-season record by a midfielder by 33 goals, which was held before by George Best with 32 goals in the 1967-68 season. After scoring 31 league goals, Ronaldo won the Premier League Golden Boot and the European Golden shoe, which made him the first winger to win the European Golden shoe. He additionally received the PFA Players' Player of the Year and FWA Footballer of the Year awards for the second consecutive season. In the knockout stage of the Champions League, Ronaldo scored the decisive goal against Lyon, which helped United advance to the quarter-finals 2–1 on aggregate, and, while playing as a striker, scored with a header in the 3–0 aggregate win over Roma. United reached the final against Chelsea in Moscow, where, despite his opening goal being negated by an equaliser and his penalty kick being saved in the shoot-out, United emerged victorious. As the Champions League top scorer, Ronaldo was named the UEFA Club Footballer of the Year. In the end of the 2007-2008 season, Ronaldo scored 42 goals in all competitions, with three matches missed. After his successful season, rumors said that Ronaldo interest in moving to Real Madrid, one of the best Footballs clubs in the world. 
-</center>
-
+</p>
+</article>
 <img class="left" id="pic5" src="nedladdning.jpg" alt="Cristiano Ronaldo after winning the Champions League">
 <img class="left" id="pic6" src="ronaldo-trophes.jpg">
-</div>
 <div>
-<h1>2008-2009: Final season at United</h1>
+<h1 id="2008-2009:-Final-season-at-United">2008-2009: Final season at United</h1>
 <p id="t5">
 On 7 July, Ronaldo underwent ankle surgery ahead of the 2008-09 season. Which kept him out of playing for 10 weeks. In his return, he scored his 100th goal in all competitions for United with the first of two free kick in a 5-0 win against Stoke City on 15 November, which meant that he now scored against all 10 opposition teams in the Premier League at the time. At the close of 2008, Ronaldo helped United win the 2008 FIFA Club World Cup in Japan, assisting the final-winning goal against Liga de Quito and winning the Silver Ball in the process. With his 2008 Ballon d'Or and 2008 FIFA World Player of the Year, Ronaldo became United's first Ballon d'Or winner since Best in 1968, and the first Premier League player to be named the FIFA World Player of the Year. 
 His match-winning goal in the second leg against Porto, a 40-yard strike, earned him the inaugural FIFA Puskás Award, presented by FIFA in recognition of the best goal of the year, he later called it the best goal he had ever scored. United advanced to the final in Rome, where he made little impact in United's 2–0 defeat to Barcelona. Ronaldo ended his time in England with nine trophies, as United claimed their third successive league title and a Football League Cup. He finished the campaign with 26 goals in all competitions, 16 goals fewer than the previous season, in four more appearances. His final goal for United came on 10 May 2009 with a free kick in the Manchester derby at Old Trafford.
@@ -213,7 +276,7 @@ His match-winning goal in the second leg against Porto, a 40-yard strike, earned
 </div>
 
 <div>
-<h2>2009-2018 at Real Madrid</h2>
+<h2 id="2009-2018-at-Real-Madrid">2009-2018 at Real Madrid</h2>
 <p>
 Ahead of the 2009–10 season, Ronaldo joined Real Madrid for a world record transfer fee at the time, of £80 million. His contract, which ran until 2015, was worth €11 million per year and contained a €1 billion buy-out clause. At least 80,000 fans attended his presentation at the Santiago Bernabéu, surpassing the 25-year record of 75,000 fans who had welcomed Diego Maradona at Napoli. Since club captain Raúl already wore the number 7 (the number Ronaldo wore at United), Ronaldo received the number 9 shirt.
 </p>
@@ -221,7 +284,7 @@ Ahead of the 2009–10 season, Ronaldo joined Real Madrid for a world record tra
 </div>
 
 <div>
-<h2>2009-2013</h2>	
+<h2 id="2009-2013">2009-2013</h2>	
 <p>
 On August 29th, Ronaldo made his La Liga debut for Real Madrid against Deportivo La Coruna and scored from the penalty spot in Madrid’s 3-2 home win. Then he became the first Madrid player to score in each of his first four league games. His first Champions League goals for the club followed with two free kicks in the first group match against Zürich. In October ended his strong start to the season because of an ankle injury while on international duty, which kept him away from the pitch for seven weeks. Ronaldo received his first red card in Spain against Almeria a week after his comeback from his ankle injury. In the end of the year in the middle of the season Ronaldo finished second in the 2009 Ballon d’Or and the 2009 FIFA World Player of the Year awards, behind Leo Messi who players for Barcelona, Real Madrid’s rivals. In the of the season Ronaldo ended up with 33 goals in all competitions, including a hat-trick in a 4-1 win against Mallorca, on 5 may 2010, his first hat-trick in the La Liga. His first season with Real Madrid ended trophyless. 
 
@@ -233,7 +296,7 @@ Ronaldo began the 2012–13 season by lifting the 2012 Super copa de España, hi
 </div>
 
 <div>
-<h2>2013–2015: Consecutive FIFA Ballon d'Or wins and La Décima</h2>
+<h2 id="2013-2015:-Consecutive-FIFA-Ballon-d'Or-wins-and-LaDécima">2013–2015: Consecutive FIFA Ballon d'Or wins and La Décima</h2>
 <img id="pic9" src="https://images.indianexpress.com/2014/01/ronaldoreutersm1.jpg">
 <p>
 Following the 2012–13 winter break, Ronaldo captained Madrid for the first time in an official match, scoring a brace to lift 10-man Madrid to a 4–3 win over Sociedad on 6 January. He subsequently became the first non-Spanish player in 60 years to captain Madrid in El Clasico on 30 January, a match which also marked his 500th club appearance. Three days prior, he had scored his 300th club goal as part of a perfect hat-trick against Getafe. He scored his 200th goal for Madrid on 8 May in a 6–2 win against Málaga, reaching the landmark in 197 games. He helped Madrid reach the 2013 Copa del Rey Final by scoring twice in El Clásico, which marked the sixth successive match at Camp Nou in which he had scored, a club record. In the final, he headed the opening goal of an eventual 2–1 defeat to Atlético, but was shown a red card for violent conduct. In the first knockout round of the Champions League, Ronaldo faced his former club Manchester United for the first time. After scoring the equaliser in a 1–1 draw at the Santiago Bernabéu, he scored the winning goal in a 2–1 win on his first return to Old Trafford. He did not celebrate scoring against his former club as a mark of respect. After scoring three goals against Galatasaray in the quarters, he scored Madrid's only goal in the 4–1 away defeat to Borussia Dortmund in the semi-finals and Real were eliminated at the semi-final stage for the third consecutive year despite a 2–0 win in the second leg
@@ -248,7 +311,7 @@ During the 2014–15 season, Ronaldo set a new personal best of 61 goals, starti
 <img id="pic10" src="cristiano-ronaldo-share-his-ballon-d'or-with-his-teammate.jpg">
 </div>
 <div>
-<h2>2015–2017: All-time Real Madrid top scorer</h2>
+<h2 id="2015-2017:-All-time-Real-Madrid-top-scorer">2015–2017: All-time Real Madrid top scorer</h2>
 <p>
 At the start of his seventh season at Madrid, the 2015–16 campaign, Ronaldo became the club's all-time top scorer, first in the league and then in all competitions. His five-goal haul in a 6–0 away win over Espanyol on 12 September took his tally in La Liga to 230 goals in 203 games, surpassing the club's previous recordholder, Raúl. A month later, on 17 October, he again surpassed Raúl when he scored the second goal in a 3–0 defeat of Levante at the Bernabéu to take his overall total for the club to 324 goals. Ronaldo also became the all-time top scorer in the Champions League with a hat-trick in the first group match against Shakhtar Donetsk, having finished the previous season level with Messi on 77 goals. Two goals against Malmö FF in a 2–0 away win on 30 September saw him reach the milestone of 500 career goals for club and country. He subsequently became the first player to score double figures in the competition's group stage, setting the record at 11 goals, including another four-goal haul against Malmö
 
@@ -260,7 +323,7 @@ In the 2016–17 UEFA Champions League quarter-final against Bayern in April, Ro
 </div>
 
 <div>
-<h2>2017–2018: Fifth Ballon d'Or and fifth Champions League title</h2>
+<h2 id="2017–2018:-Fifth-Ballon-d'Or-and-fifth-Champions-League-title">2017–2018: Fifth Ballon d'Or and fifth Champions League title</h2>
 <p style="center">
 <img id="pic12" src="five-ballon-dor.jpg">
 At the start of the 2017–18 season, Ronaldo scored Madrid's second goal in the 80th minute of a 3–1 win over Barcelona in the first leg of the 2017 Supercopa de España at Camp Nou; however, he was sent off two minutes later and missed the second leg. On 23 October, his performances throughout 2017 saw him awarded The Best FIFA Men's Player award for the second consecutive year. On 6 December, he became the first player to score in all six Champions League group stage matches with a curling strike at home to Dortmund. A day later, Ronaldo won the 2017 Ballon d'Or, receiving his fifth-time award on the Eiffel Tower in Paris. On 16 December, he scored a free kick winner, as Madrid won their second Club World Cup in a row by beating Gremio in the final. On 3 March 2018, he scored two goals in a 3–1 home win over Getafe, his first being his 300th La Liga goal in his 286th appearance, making him the fastest player to reach this landmark and only the second player to do so after Messi. On 18 March, he reached his 50th career hat-trick, scoring four goals in a 6–3 win against Girona. 
@@ -270,7 +333,7 @@ On 3 April, Ronaldo scored the first two goals in a 3–0 away win against Juven
 </div>
 
 <div>
-<h2>Juventus 2018-2021</h2>	
+<h2 id="Juventus-2018-2021">Juventus 2018-2021</h2>	
 <img id="pic14" src="cristiano-ronaldo-juventus.jpg">
 <p>
 Despite months of negotiation to sign a new Real Madrid contract, on 10 July 2018, Ronaldo signed a four-year contract with Italian club Juventus after completing a €100 million transfer, which included an additional €12 million in other fees and solidarity contributions to Ronaldo's youth clubs. The transfer was the highest ever for a player over 30 years old, and the highest paid by an Italian club. Upon signing, Ronaldo cited his need for a new challenge as his rationale for departing Madrid, but later attributed the transfer to the lack of support he felt was shown by club president Florentino Pérez. 
@@ -284,7 +347,7 @@ On 22 June, he scored a penalty in a 2–0 away win over Bologna, overtaking Rui
 </div>
 
 <div>
-<h2>2020–2021: 100 Juventus goals, Capocannoniere and departure</h2>
+<h2 id="2020–2021:-100-Juventus-goals-Capocannoniere-and-departure">2020–2021: 100 Juventus goals, Capocannoniere and departure</h2>
 <p>
 <img id="pic15" src="ronaldowithCoppaItaliaFinal.jpg" alt="Ronaldo with Coppa Italia trophy">
 On 20 September 2020, Ronaldo scored in Juventus's opening league match of the season, a 3–0 home win over Sampdoria. On 1 November, after Ronaldo took nearly three weeks to recover from COVID-19, he returned to action against Spezia; he came off the bench in the second half and scored within the first three minutes, before scoring a second goal from the penalty spot in an eventual 4–1 away win. On 2 December, he scored a goal against Dynamo Kyiv in a Champions League group stage match to reach his 750th senior career goal. Ronaldo played his 100th match in all competitions for Juventus on 13 December, scoring two penalties in a 3–1 away win over Genoa in the league to bring his goal tally to 79. On 20 January 2021, Juventus won the 2020 Supercoppa Italiana after a 2–0 win against Napoli, with Ronaldo scoring the opening goal. On 2 March, he scored a goal in a 3–0 win over Spezia in his 600th league match, to become the first player to score at least 20 goals in 12 consecutive seasons in the top five leagues of Europe. On 9 March, Juventus were knocked out of the Champions League at the round of 16 by Porto, again on the away goals rule (4–4 on aggregate). On 14 March, he scored his 57th career hat-trick in a 3–1 away win over Cagliari. On 12 May, Ronaldo scored a goal in a 3–1 away win over Sassuolo to reach his 100th goal for Juventus in all competitions on his 131st appearance, becoming the fastest Juventus player to achieve the feat. With Juventus's victory in the 2021 Coppa Italia Final on 19 May, Ronaldo became the first player in history to win every major domestic trophy in England, Spain and Italy. Ronaldo ended the season with 29 league goals, winning the Capocannoniere award for highest goalscorer and becoming the first footballer to finish as top scorer in the English, Spanish and Italian leagues. 
@@ -293,7 +356,7 @@ On 22 August, Ronaldo started the first game of the new season on the bench, com
 </div>
 
 <div>
-<h2>Return to Manchester United 2021-</h2>
+<h2 id="Return-to-Manchester-United-2021-">Return to Manchester United 2021-</h2>
 <p>
 <img id="pic16" src="man-united-announces-return-of-ronaldo.PNG" alt="man united announced return of Ronaldo">
 On 27 August 2021, Manchester United announced they had reached an agreement with Juventus to re-sign Ronaldo, subject to agreement of personal terms, visa and medical. The transfer was reported as costing an initial £12.85 million, with a two-year contract plus an optional year, and was confirmed on 31 August. Ronaldo was given the number 7 shirt after Edinson Cavani agreed to switch to 21. The first 24 hours of Ronaldo's shirt sales was reported to have broken the all-time record following a transfer, overtaking Messi after his move to Paris Saint-Germain. 
@@ -303,12 +366,12 @@ On 11 September, Ronaldo made his second debut at Old Trafford, scoring the open
 
 <div>
 <img id="pic17" src="Everythingronaldowonsofar.jpg" alt="Everything Ronaldo won so far"><br>
-<center> <h3>    Every trophe Cristiano Ronaldo won from 2002 to 2021</h3></center>
+<center> <h3 id="Every-trophe-Cristiano-Ronaldo-won-from-2002-to-2021">    Every trophe Cristiano Ronaldo won from 2002 to 2021</h3></center>
 </div>
 
 <section>
 	<p> Made by Belal Almawi<br>
-		e-mail:belalmawi@gmail.com
+		E-mail: belalmawi@gmail.com
 	</p>
 </section>
 </body>
